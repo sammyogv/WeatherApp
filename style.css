@@ -1,0 +1,121 @@
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(245, 239, 232);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+}
+
+form input{
+    
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    height: 50px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color:black;
+
+}
+
+form button{
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    height: 50px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color:hsla(155, 100%, 50%, 0.589);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: hsla(155, 100%, 50%, 0.589);
+    color: white;
+}
+
+form button:active{
+    background-color: hsla(155, 100%, 50%, 0.2);
+    color: white;
+}
+
+.card{
+    background: linear-gradient(180deg, hsla(202, 100%, 50%, 0.836), hsla(27, 100%, 50%, 0.932));
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    width: 400px;
+    text-align: center;
+    font-size: 1.2em;
+    color: black;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cityDisplay{
+    font-size: 2em;
+    font-weight: bold;
+    color: hsla(155, 100%, 50%, 0.589);
+   
+}
+
+.tempDisplay{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: hsla(155, 100%, 77%, 0.589);
+    margin-bottom: 0.5em;
+}
+
+.weatherEmoji{
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.errorDisplay{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: hsla(0, 100%, 50%, 0.589);
+    margin-bottom: 0.5em;
+}
+
+.humidityDisplay{
+    color: black;
+}
+
+
+@media (max-width: 470px){
+    .card{
+        width: 80%;
+    }
+    form input{
+        width: 50%;
+        margin-left: 10px;
+    }
+    form button{
+        width: 40%;
+        
+    }
+    .weatherForm{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+    }
+}
